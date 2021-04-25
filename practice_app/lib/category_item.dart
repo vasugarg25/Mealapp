@@ -17,8 +17,9 @@ class CategoryItem extends StatelessWidget {
     return InkWell(
         onTap: ()=>selectCategory(context),
         splashColor: Theme.of(context).primaryColor,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(20),
         child: Card(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           child: Text(
             title,
             style: Theme.of(context).textTheme.title,
