@@ -3,6 +3,7 @@ import "package:flutter/foundation.dart";
 import 'package:flutter/material.dart';
 import 'package:practice_app/category_meal_screen.dart';
 import 'package:practice_app/meal_detail_screen.dart';
+import 'package:practice_app/tabs_screen.dart';
 import './dummy_data.dart';
 import './category_item.dart';
 import 'categories_screen.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: 'RobotoCondensed')),
       ),
-      home: CategoriesScreen(),
+      home: TabScreen(),
       routes: {
         '/category-meals':(ctx)=>CategoryMealScreen(), //these routes are helpful in bigger apps where there are many pages!
         '/meal-detail': (ctx)=>MealDetailScreen(),
